@@ -1,0 +1,109 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: #ddd;
+}
+.common-header {
+    overflow: hidden;
+    margin-bottom: 20px;
+    .title-img {
+        overflow: hidden;
+        float: right;
+        margin-right: 9px;
+        .btnIcon{
+            width: 15px;
+            height: 15px;
+            margin: 0 2px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 50%;
+            cursor: pointer;
+            img{
+                width: 100%;
+            }
+        }
+        .btnIcon.active{
+            background-color: #fff;
+        }
+    }
+}
+.contentTable{
+    overflow: hidden;
+}
+.contentTable2{
+    overflow: visible;
+    white-space: nowrap;
+    width: 100%; //
+    transition: all 300ms;
+    transition-timing-function: ease-out;
+}
+.content{
+    vertical-align: top;
+    font-family: Italianplates1999;
+    display: inline-block;
+    width: 100%; //
+    margin-top: -10px;
+    border-collapse: collapse;
+    border:0;
+    .title th{
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        font-size: 0.8em;
+        text-align: left;
+        opacity: 0.8;
+    }
+    tr{
+        display: flex;
+        justify-content: space-between;
+        height: 3.7vh;
+        line-height: 3.7vh;
+    }
+    tr:nth-child(2n) {
+        background:linear-gradient(270deg,rgba(0,109,103,0.2) 0%,rgba(0,109,103,0) 100%);
+    }
+    .t1{
+        width: 20%;
+    }
+    .line1{
+        width: 20%;
+        height:14px;
+        line-height: 14px;
+        margin-top: 11px;
+        text-align: center;
+        background:rgba(255,255,255,1);
+        opacity:0.4;
+        color: #000;
+        font-size: 10px;
+        border: 0;
+    }
+    .t2{
+        width: 100%;
+        padding-left: 4%;
+    }
+    .line2{
+        color: #74BAAE;
+        font-size: 17px;
+        width: 100%;
+        padding-left: 4%;
+        border: 0;
+    }
+    .line3,.line4{
+        width: 30%;
+    }
+    .t3,.t4,.t5{
+        width: 30%;
+    }
+    .t5{
+        width: 40%;
+    }
+    .line3,.line4,.line5{
+        font-size: 16px;
+        width: 40%;
+        text-align: center;
+        border: none;
+    }
+    .line5{
+        width: 40%;
+    }
+}
